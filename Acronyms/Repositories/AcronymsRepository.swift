@@ -9,7 +9,7 @@ import Foundation
 
 typealias GetAcronymsHandler = (Swift.Result<GetAcronymsResponse, NetworkServiceError>) -> Void
 
-class SessionRepository {
+class AcronymsRepository {
 
     private var service: AcronymsService
     

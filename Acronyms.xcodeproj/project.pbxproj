@@ -29,6 +29,7 @@
 		F5F20BC5263A2A8500313CC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC4263A2A8500313CC1 /* ContentView.swift */; };
 		F5F20BC7263A2C8800313CC1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC6263A2C8800313CC1 /* SearchBar.swift */; };
 		F5F20BC9263A2F5600313CC1 /* MeaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC8263A2F5600313CC1 /* MeaningView.swift */; };
+		F5F20BCE263A40C300313CC1 /* AcronymsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BCD263A40C300313CC1 /* AcronymsMockService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		F5F20BC4263A2A8500313CC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5F20BC6263A2C8800313CC1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F5F20BC8263A2F5600313CC1 /* MeaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningView.swift; sourceTree = "<group>"; };
+		F5F20BCD263A40C300313CC1 /* AcronymsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsMockService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		F5F20B84263A0BB800313CC1 /* AcronymsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F5F20BCC263A40AC00313CC1 /* Mock */,
 				F5F20B85263A0BB800313CC1 /* AcronymsTests.swift */,
 				F5F20B87263A0BB800313CC1 /* Info.plist */,
 			);
@@ -263,6 +266,14 @@
 				F5F20BB5263A0DD800313CC1 /* AcronymsNetworkService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F5F20BCC263A40AC00313CC1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BCD263A40C300313CC1 /* AcronymsMockService.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5F20B86263A0BB800313CC1 /* AcronymsTests.swift in Sources */,
+				F5F20BCE263A40C300313CC1 /* AcronymsMockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

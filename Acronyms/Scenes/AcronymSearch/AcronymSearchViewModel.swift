@@ -8,16 +8,16 @@
 import Foundation
 
 class AcronymSearchViewModel: ObservableObject {
-    private var service: AcronymsService
+    private var repository: AcronymsRepository
     @Published var acronyms: [Acronym] = []
     
-    init(service: AcronymsService) {
-        self.service = service
+    init(repository: AcronymsRepository) {
+        self.repository = repository
     }
     
     func getAcronyms(keyword: String) {
         let parameters = GetAcronymsParameters(keyword: keyword)
-        service.getAcronyms(parameters: parameters) { [unowned self] (result) in
+        repository.getAcronyms(parameters: parameters) { [unowned self] (result) in
             switch result {
             case .success(let response):
                 self.acronyms = response

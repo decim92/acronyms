@@ -12,7 +12,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         AcronymsListView(viewModel:
-                            AcronymSearchViewModel(service:
-                                                    AcronymsNetworkService()))
+                            AcronymSearchViewModel(repository: AcronymsRepository(service: AcronymsNetworkService())))
     }
 }
