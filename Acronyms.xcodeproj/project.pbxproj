@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167F017427109DF5495E5D3C /* Pods_Acronyms_AcronymsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F3C56B3590ADE535E7F242 /* Pods_Acronyms_AcronymsUITests.framework */; };
+		B4E91DF893DAFDD51CC02B8C /* Pods_Acronyms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153937DA5DBD4A27FC838785 /* Pods_Acronyms.framework */; };
+		C3DBE35B3A22A17965F73880 /* Pods_AcronymsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC4840A34022630F291D518 /* Pods_AcronymsTests.framework */; };
 		F5F20B6F263A0BB700313CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20B6E263A0BB700313CC1 /* AppDelegate.swift */; };
 		F5F20B71263A0BB700313CC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20B70263A0BB700313CC1 /* SceneDelegate.swift */; };
-		F5F20B73263A0BB700313CC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20B72263A0BB700313CC1 /* ViewController.swift */; };
-		F5F20B76263A0BB700313CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F20B74263A0BB700313CC1 /* Main.storyboard */; };
 		F5F20B78263A0BB800313CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F20B77263A0BB800313CC1 /* Assets.xcassets */; };
 		F5F20B7B263A0BB800313CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F20B79263A0BB800313CC1 /* LaunchScreen.storyboard */; };
 		F5F20B86263A0BB800313CC1 /* AcronymsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20B85263A0BB800313CC1 /* AcronymsTests.swift */; };
 		F5F20B91263A0BB800313CC1 /* AcronymsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20B90263A0BB800313CC1 /* AcronymsUITests.swift */; };
+		F5F20BA7263A0D4400313CC1 /* AcronymsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BA6263A0D4400313CC1 /* AcronymsRepository.swift */; };
+		F5F20BA9263A0D6800313CC1 /* Parametrizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BA8263A0D6800313CC1 /* Parametrizable.swift */; };
+		F5F20BAB263A0D7200313CC1 /* AcronymsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BAA263A0D7200313CC1 /* AcronymsService.swift */; };
+		F5F20BB0263A0DAA00313CC1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BAF263A0DAA00313CC1 /* NetworkService.swift */; };
+		F5F20BB2263A0DB300313CC1 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BB1263A0DB300313CC1 /* NetworkRouter.swift */; };
+		F5F20BB4263A0DC400313CC1 /* NetworkService+Acronyms.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BB3263A0DC400313CC1 /* NetworkService+Acronyms.swift */; };
+		F5F20BB6263A0DD800313CC1 /* AcronymsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BB5263A0DD800313CC1 /* AcronymsNetworkService.swift */; };
+		F5F20BBD263A0E3800313CC1 /* AcronymSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BBC263A0E3800313CC1 /* AcronymSearchViewModel.swift */; };
+		F5F20BBF263A0EC600313CC1 /* AcronymsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BBE263A0EC600313CC1 /* AcronymsRequest.swift */; };
+		F5F20BC3263A205B00313CC1 /* AcronymsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC2263A205B00313CC1 /* AcronymsList.swift */; };
+		F5F20BC5263A2A8500313CC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC4263A2A8500313CC1 /* ContentView.swift */; };
+		F5F20BC7263A2C8800313CC1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC6263A2C8800313CC1 /* SearchBar.swift */; };
+		F5F20BC9263A2F5600313CC1 /* MeaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F20BC8263A2F5600313CC1 /* MeaningView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153937DA5DBD4A27FC838785 /* Pods_Acronyms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acronyms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1849613513CE7BADB1E9CBE0 /* Pods-Acronyms-AcronymsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronyms-AcronymsUITests.release.xcconfig"; path = "Target Support Files/Pods-Acronyms-AcronymsUITests/Pods-Acronyms-AcronymsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3286F062E21BFDE3F934A0BD /* Pods-Acronyms-AcronymsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronyms-AcronymsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Acronyms-AcronymsUITests/Pods-Acronyms-AcronymsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5123354685ADF1F07F0C3681 /* Pods-Acronyms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronyms.release.xcconfig"; path = "Target Support Files/Pods-Acronyms/Pods-Acronyms.release.xcconfig"; sourceTree = "<group>"; };
+		58F3C56B3590ADE535E7F242 /* Pods_Acronyms_AcronymsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acronyms_AcronymsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B9F3671923D94712470820 /* Pods-AcronymsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcronymsTests.release.xcconfig"; path = "Target Support Files/Pods-AcronymsTests/Pods-AcronymsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C4528881FEA2D3C7EF52EBF /* Pods-Acronyms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronyms.debug.xcconfig"; path = "Target Support Files/Pods-Acronyms/Pods-Acronyms.debug.xcconfig"; sourceTree = "<group>"; };
+		9BC4840A34022630F291D518 /* Pods_AcronymsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcronymsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3723BB7079018A8DF7AD7BB /* Pods-AcronymsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcronymsTests.debug.xcconfig"; path = "Target Support Files/Pods-AcronymsTests/Pods-AcronymsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F20B6B263A0BB700313CC1 /* Acronyms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acronyms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F20B6E263A0BB700313CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F20B70263A0BB700313CC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5F20B72263A0BB700313CC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5F20B75263A0BB700313CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5F20B77263A0BB800313CC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F20B7A263A0BB800313CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F20B7C263A0BB800313CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +70,19 @@
 		F5F20B8C263A0BB800313CC1 /* AcronymsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F20B90263A0BB800313CC1 /* AcronymsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsUITests.swift; sourceTree = "<group>"; };
 		F5F20B92263A0BB800313CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F20BA6263A0D4400313CC1 /* AcronymsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsRepository.swift; sourceTree = "<group>"; };
+		F5F20BA8263A0D6800313CC1 /* Parametrizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parametrizable.swift; sourceTree = "<group>"; };
+		F5F20BAA263A0D7200313CC1 /* AcronymsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsService.swift; sourceTree = "<group>"; };
+		F5F20BAF263A0DAA00313CC1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F5F20BB1263A0DB300313CC1 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		F5F20BB3263A0DC400313CC1 /* NetworkService+Acronyms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Acronyms.swift"; sourceTree = "<group>"; };
+		F5F20BB5263A0DD800313CC1 /* AcronymsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsNetworkService.swift; sourceTree = "<group>"; };
+		F5F20BBC263A0E3800313CC1 /* AcronymSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchViewModel.swift; sourceTree = "<group>"; };
+		F5F20BBE263A0EC600313CC1 /* AcronymsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsRequest.swift; sourceTree = "<group>"; };
+		F5F20BC2263A205B00313CC1 /* AcronymsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsList.swift; sourceTree = "<group>"; };
+		F5F20BC4263A2A8500313CC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5F20BC6263A2C8800313CC1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		F5F20BC8263A2F5600313CC1 /* MeaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E91DF893DAFDD51CC02B8C /* Pods_Acronyms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DBE35B3A22A17965F73880 /* Pods_AcronymsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167F017427109DF5495E5D3C /* Pods_Acronyms_AcronymsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88E0D77175681AF1B83356E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153937DA5DBD4A27FC838785 /* Pods_Acronyms.framework */,
+				58F3C56B3590ADE535E7F242 /* Pods_Acronyms_AcronymsUITests.framework */,
+				9BC4840A34022630F291D518 /* Pods_AcronymsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA929C3E9DFB4B5FBDEB1E66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C4528881FEA2D3C7EF52EBF /* Pods-Acronyms.debug.xcconfig */,
+				5123354685ADF1F07F0C3681 /* Pods-Acronyms.release.xcconfig */,
+				3286F062E21BFDE3F934A0BD /* Pods-Acronyms-AcronymsUITests.debug.xcconfig */,
+				1849613513CE7BADB1E9CBE0 /* Pods-Acronyms-AcronymsUITests.release.xcconfig */,
+				E3723BB7079018A8DF7AD7BB /* Pods-AcronymsTests.debug.xcconfig */,
+				62B9F3671923D94712470820 /* Pods-AcronymsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F5F20B62263A0BB700313CC1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				F5F20B84263A0BB800313CC1 /* AcronymsTests */,
 				F5F20B8F263A0BB800313CC1 /* AcronymsUITests */,
 				F5F20B6C263A0BB700313CC1 /* Products */,
+				BA929C3E9DFB4B5FBDEB1E66 /* Pods */,
+				88E0D77175681AF1B83356E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +161,17 @@
 		F5F20B6D263A0BB700313CC1 /* Acronyms */ = {
 			isa = PBXGroup;
 			children = (
+				F5F20BAC263A0D7900313CC1 /* Models */,
+				F5F20BA5263A0D2E00313CC1 /* Repositories */,
+				F5F20BA0263A0C8900313CC1 /* Rules */,
+				F5F20B9F263A0C7900313CC1 /* Services */,
+				F5F20B9E263A0C5200313CC1 /* Scenes */,
 				F5F20B6E263A0BB700313CC1 /* AppDelegate.swift */,
 				F5F20B70263A0BB700313CC1 /* SceneDelegate.swift */,
-				F5F20B72263A0BB700313CC1 /* ViewController.swift */,
-				F5F20B74263A0BB700313CC1 /* Main.storyboard */,
 				F5F20B77263A0BB800313CC1 /* Assets.xcassets */,
 				F5F20B79263A0BB800313CC1 /* LaunchScreen.storyboard */,
 				F5F20B7C263A0BB800313CC1 /* Info.plist */,
+				F5F20BC4263A2A8500313CC1 /* ContentView.swift */,
 			);
 			path = Acronyms;
 			sourceTree = "<group>";
@@ -128,6 +194,77 @@
 			path = AcronymsUITests;
 			sourceTree = "<group>";
 		};
+		F5F20B9E263A0C5200313CC1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BA1263A0CA000313CC1 /* AcronymSearch */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F5F20B9F263A0C7900313CC1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BAE263A0D9500313CC1 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5F20BA0263A0C8900313CC1 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BA8263A0D6800313CC1 /* Parametrizable.swift */,
+				F5F20BAA263A0D7200313CC1 /* AcronymsService.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		F5F20BA1263A0CA000313CC1 /* AcronymSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BC2263A205B00313CC1 /* AcronymsList.swift */,
+				F5F20BBC263A0E3800313CC1 /* AcronymSearchViewModel.swift */,
+				F5F20BC6263A2C8800313CC1 /* SearchBar.swift */,
+				F5F20BC8263A2F5600313CC1 /* MeaningView.swift */,
+			);
+			path = AcronymSearch;
+			sourceTree = "<group>";
+		};
+		F5F20BA5263A0D2E00313CC1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BA6263A0D4400313CC1 /* AcronymsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F5F20BAC263A0D7900313CC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BAD263A0D8100313CC1 /* Network */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5F20BAD263A0D8100313CC1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BBE263A0EC600313CC1 /* AcronymsRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F5F20BAE263A0D9500313CC1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F5F20BAF263A0DAA00313CC1 /* NetworkService.swift */,
+				F5F20BB1263A0DB300313CC1 /* NetworkRouter.swift */,
+				F5F20BB3263A0DC400313CC1 /* NetworkService+Acronyms.swift */,
+				F5F20BB5263A0DD800313CC1 /* AcronymsNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5F20B95263A0BB800313CC1 /* Build configuration list for PBXNativeTarget "Acronyms" */;
 			buildPhases = (
+				0FD39941D961654872A79D5D /* [CP] Check Pods Manifest.lock */,
 				F5F20B67263A0BB700313CC1 /* Sources */,
 				F5F20B68263A0BB700313CC1 /* Frameworks */,
 				F5F20B69263A0BB700313CC1 /* Resources */,
+				C22334D069E06B40194523F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5F20B98263A0BB800313CC1 /* Build configuration list for PBXNativeTarget "AcronymsTests" */;
 			buildPhases = (
+				A7FED2F6460D9FD8572B7B06 /* [CP] Check Pods Manifest.lock */,
 				F5F20B7D263A0BB800313CC1 /* Sources */,
 				F5F20B7E263A0BB800313CC1 /* Frameworks */,
 				F5F20B7F263A0BB800313CC1 /* Resources */,
@@ -170,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5F20B9B263A0BB800313CC1 /* Build configuration list for PBXNativeTarget "AcronymsUITests" */;
 			buildPhases = (
+				793E1487E7BD263FC7C04031 /* [CP] Check Pods Manifest.lock */,
 				F5F20B88263A0BB800313CC1 /* Sources */,
 				F5F20B89263A0BB800313CC1 /* Frameworks */,
 				F5F20B8A263A0BB800313CC1 /* Resources */,
+				6E5D2C2868A19D1061F0B198 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +375,6 @@
 			files = (
 				F5F20B7B263A0BB800313CC1 /* LaunchScreen.storyboard in Resources */,
 				F5F20B78263A0BB800313CC1 /* Assets.xcassets in Resources */,
-				F5F20B76263A0BB700313CC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +394,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FD39941D961654872A79D5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Acronyms-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5D2C2868A19D1061F0B198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Acronyms-AcronymsUITests/Pods-Acronyms-AcronymsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Acronyms-AcronymsUITests/Pods-Acronyms-AcronymsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Acronyms-AcronymsUITests/Pods-Acronyms-AcronymsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793E1487E7BD263FC7C04031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Acronyms-AcronymsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7FED2F6460D9FD8572B7B06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AcronymsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C22334D069E06B40194523F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Acronyms/Pods-Acronyms-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Acronyms/Pods-Acronyms-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Acronyms/Pods-Acronyms-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5F20B67263A0BB700313CC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F20B73263A0BB700313CC1 /* ViewController.swift in Sources */,
+				F5F20BA7263A0D4400313CC1 /* AcronymsRepository.swift in Sources */,
+				F5F20BB0263A0DAA00313CC1 /* NetworkService.swift in Sources */,
+				F5F20BBD263A0E3800313CC1 /* AcronymSearchViewModel.swift in Sources */,
 				F5F20B6F263A0BB700313CC1 /* AppDelegate.swift in Sources */,
+				F5F20BA9263A0D6800313CC1 /* Parametrizable.swift in Sources */,
+				F5F20BB6263A0DD800313CC1 /* AcronymsNetworkService.swift in Sources */,
+				F5F20BB4263A0DC400313CC1 /* NetworkService+Acronyms.swift in Sources */,
+				F5F20BC7263A2C8800313CC1 /* SearchBar.swift in Sources */,
 				F5F20B71263A0BB700313CC1 /* SceneDelegate.swift in Sources */,
+				F5F20BAB263A0D7200313CC1 /* AcronymsService.swift in Sources */,
+				F5F20BC9263A2F5600313CC1 /* MeaningView.swift in Sources */,
+				F5F20BC3263A205B00313CC1 /* AcronymsList.swift in Sources */,
+				F5F20BC5263A2A8500313CC1 /* ContentView.swift in Sources */,
+				F5F20BBF263A0EC600313CC1 /* AcronymsRequest.swift in Sources */,
+				F5F20BB2263A0DB300313CC1 /* NetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +552,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F5F20B74263A0BB700313CC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5F20B75263A0BB700313CC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5F20B79263A0BB800313CC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +681,7 @@
 		};
 		F5F20B96263A0BB800313CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C4528881FEA2D3C7EF52EBF /* Pods-Acronyms.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +701,7 @@
 		};
 		F5F20B97263A0BB800313CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5123354685ADF1F07F0C3681 /* Pods-Acronyms.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +721,7 @@
 		};
 		F5F20B99263A0BB800313CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3723BB7079018A8DF7AD7BB /* Pods-AcronymsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +744,7 @@
 		};
 		F5F20B9A263A0BB800313CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B9F3671923D94712470820 /* Pods-AcronymsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +767,7 @@
 		};
 		F5F20B9C263A0BB800313CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3286F062E21BFDE3F934A0BD /* Pods-Acronyms-AcronymsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +788,7 @@
 		};
 		F5F20B9D263A0BB800313CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1849613513CE7BADB1E9CBE0 /* Pods-Acronyms-AcronymsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
